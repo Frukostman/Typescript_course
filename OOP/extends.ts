@@ -21,6 +21,16 @@ class Pelicula {
         this._title = title;
     }
 }
+class Trailer extends Pelicula{
+   
+    spoiler() {
+        //atributo publico
+        console.log(this.title)
+        //atributo protected
+        console.log(this.seen)
+    }
+}
+
 // implementacion
 
 let miPelicula: Pelicula = new Pelicula("mi video nuevo",120 , true);
@@ -28,3 +38,7 @@ let miPelicula: Pelicula = new Pelicula("mi video nuevo",120 , true);
 console.log(miPelicula.title)
 miPelicula.title="otro video"
 console.log(miPelicula.title)
+
+let miTrailer: Trailer = new Trailer("mi video trailer",2 , false);
+
+console.log(miTrailer.title)
